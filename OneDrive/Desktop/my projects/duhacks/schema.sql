@@ -1,4 +1,4 @@
-CREATE TABLE donor_profile (
+﻿CREATE TABLE donor_profile (
     donor_id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     gender TEXT,
