@@ -10,7 +10,6 @@ CREATE TABLE bloodBanks (
     availableBloodUnits INTEGER NOT NULL,
     createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
     updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-    Apheresis Facility BOOLEAN DEFAULT 0,
     Emergency Services BOOLEAN DEFAULT 0,
     Operating Hours TEXT
     );
@@ -24,7 +23,6 @@ INSERT INTO bloodBanks (
     licenseNumber,
     capcity,
     availableBloodUnits,
-    Apheresis Facility,
     Emergency Services,
     Operating Hours
-) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
