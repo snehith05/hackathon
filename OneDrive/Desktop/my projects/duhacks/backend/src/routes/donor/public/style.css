@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Stop scrolling */
+}
+
+#map {
+    width: 100%;
+    height: 100vh; /* Full screen */
+    z-index: 1;
+}
+
+/* --- Top Header --- */
+.header-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 999; /* Float above map */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none; /* Let clicks pass through empty space */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    pointer-events: auto;
+}
+
+.page-title {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    pointer-events: auto; /* Make clickable */
+}
+
+.save-btn {
+    background-color: #27ae60; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    pointer-events: auto; /* Make clickable */
+}
+
+.save-btn:hover {
+    background-color: #2ecc71;
+}
+
+.signout-btn {
+    background-color: #e74c3c; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    pointer-events: auto; /* Make clickable */
+}
+
+.signout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* --- Bottom Footer --- */
+.footer-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #555;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+.blue-text { color: #2980b9; font-weight: bold; }
+.red-text { color: #e74c3c; font-weight: bold; }
+
+/* --- Custom Red Square Icon (Donor) --- */
+.red-donor-icon {
+    background-color: #e74c3c;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* --- The Name Label next to the dot --- */
+.donor-label {
+    background: white;
+    border: 1px solid #ccc;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}

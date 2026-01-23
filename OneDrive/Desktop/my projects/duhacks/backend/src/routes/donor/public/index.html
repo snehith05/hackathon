@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Blood Donor Map</title>
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Header Overlay -->
+    <div class="header-overlay">
+        <div class="page-title">
+            <i class="fa-solid fa-location-dot"></i> Live Map
+        </div>
+        <div class="header-buttons">
+            <button class="save-btn">
+                <i class="fa-solid fa-floppy-disk"></i> Save Location
+            </button>
+            <button class="signout-btn" id="signoutBtn">
+                <i class="fa-solid fa-sign-out-alt"></i> Sign Out
+            </button>
+        </div>
+    </div>
+
+    <!-- The Map -->
+    <div id="map"></div>
+
+    <!-- Bottom Legend Overlay -->
+    <div class="footer-overlay">
+        *Drag the <span class="blue-text">Blue Marker</span> to set Hospital location. 
+        <span class="red-text">Red dots</span> are found donors.
+    </div>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
