@@ -1,6 +1,3 @@
--- Blood Bank Management System - Unified Database
--- This database combines blood bank and hospital management functionalities
-
 -- Blood Bank Schema
 CREATE TABLE IF NOT EXISTS bloodBanks (
     name TEXT PRIMARY KEY,
